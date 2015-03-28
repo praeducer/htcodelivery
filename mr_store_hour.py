@@ -31,12 +31,17 @@ def mapper(record):
 def testMapReduce():
 	mapOutput = open('map_output.txt', 'w')
 	reduced = Counter()
-	with open('micro_hackathon_data_sample.bsv', 'r') as records:
+	with open('tiny_customer_sample.bsv', 'r') as records:
 		records.next()
+#		index = 0
 		for record in records:
+			# print record.strip()
 			storeHourCount = mapper(record)
 			mapOutput.write(str(storeHourCount[0]) + '|' + str(storeHourCount[1]) + '\n')
 			reduced[storeHourCount[0]] += storeHourCount[1]
+#			index += 1
+#			if index == 100:
+#				break
 
 	# Print Keys and Counts
 	reduceOutput = open('reduce_output.txt', 'w')
@@ -45,4 +50,14 @@ def testMapReduce():
 
 if __name__ == "__main__":
 	testMapReduce()
-	
+
+# pyspark
+#########
+# 
+# pyspark --num-executors 4 --executor-cores 4 --executor-memory 4G
+# 
+# dataRDD = sc.textFile("/data/customer_sample_no_header")
+# storeHourCounts = dataRDD.map(lambda line: mapper(line)).reduceByKey(lambda a, b: a + b)
+# storeHourReduction = storeHourCounts.take(100)
+# storeHourReduction[0]
+# 
