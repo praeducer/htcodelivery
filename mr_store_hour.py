@@ -31,7 +31,7 @@ def mapper(record):
 def testMapReduce():
 	mapOutput = open('map_output.txt', 'w')
 	reduced = Counter()
-	with open('tiny_customer_sample.bsv', 'r') as records:
+	with open('customer_sample.bsv', 'r') as records:
 		records.next()
 #		index = 0
 		for record in records:
