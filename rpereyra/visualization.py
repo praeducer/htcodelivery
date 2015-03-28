@@ -4,6 +4,7 @@ import numpy as np
 import csv
 import matplotlib.pyplot as plt
 
+# activities = open('/var/projects/htcodelivery/spark/output/store_hour_reduce_output_v2.txt', 'rb')
 activities = open('reduce_output.txt', 'rb')
 
 inrows = []
@@ -33,5 +34,8 @@ output = np.zeros((len(hoods),24))
 for activity in inrows2:
     output[int(activity[0])][int(activity[1])] = np.log(float(activity[2]))
 
+plt.title('Neighborhood Activity By Hour (100K records)')
+plt.xlabel('Hour of Day (0 - 23)')
+plt.ylabel('Neighborhood')
 plt.pcolor(output,cmap=plt.cm.Reds,edgecolors='k')
 plt.savefig('time.png')
