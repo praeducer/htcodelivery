@@ -22,7 +22,7 @@ def mapper(record):
 
 	# Output <key>|<quantity>
 	# <key> = (store, hour)
-	return [(store,hour), quantity]
+	return ((store,hour), quantity)
 
 # Reducer
 ##########
@@ -45,3 +45,4 @@ def testMapReduce():
 
 if __name__ == "__main__":
 	testMapReduce()
+	
