@@ -1,3 +1,4 @@
+# author: Paul Prae
 # Mapper
 import string
 from time import strptime

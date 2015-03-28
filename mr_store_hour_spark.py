@@ -1,4 +1,17 @@
+# author: Paul Prae
 # pyspark --num-executors 4 --executor-cores 4 --executor-memory 4G
+
+import string
+from time import strptime
+from pyspark import SparkConf, SparkContext
+
+conf = SparkConf()
+#sc.setMaster("yarn")
+conf.setAppName("MR Store Hour")
+conf.set("spark.executor.memory", "4g"))
+conf.set("spark.executor.cores", "4"))
+conf.set("spark.num.executors", "4"))
+sc = SparkContext(conf = conf)
 
 # Mapper 
 #########
@@ -23,5 +36,11 @@ def mapper(record):
 dataRDD = sc.textFile("/data/customer_sample_no_header")
 storeHourCounts = dataRDD.map(lambda line: mapper(line)).reduceByKey(lambda a, b: a + b)
 storeHourReduction = storeHourCounts.take(100)
+
+# Print Keys and Counts
+reduceOutput = open('store_hour_reduce_output.txt', 'w')
+for value in storeHourReduction:
+	reduceOutput.write(value)
+	reduceOutput.write('\n')
 
 # storeHourReduction[0]
