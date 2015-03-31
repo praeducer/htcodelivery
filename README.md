@@ -1,8 +1,8 @@
-# htcodelivery
+# HT CoDelivery
 This data analysis project was part of a winning submission for the CODE category of HACKATHON clt MMXV.
 
-HACKATHON clt MMXV Main Site: http://www.hackathonclt.org/
-Competition Repo: https://github.com/tresata/hackathon2015
++ HACKATHON clt MMXV Main Site: http://www.hackathonclt.org/
++ Competition Repo: https://github.com/tresata/hackathon2015
 
 ### what is a hackathon?
 A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It's one part party, one part work-your-butt-off overnight battle against the clock
