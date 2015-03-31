@@ -24,3 +24,6 @@ e.g. output
 (149, 9)|150114
 (40, 6)|3071
 ```
+
+
+![Alt text](https://raw.githubusercontent.com/praeducer/htcodelivery/master/spark/heatmap_store_hour_quantity_full.png "Visualization of the full data set")
