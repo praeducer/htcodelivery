@@ -1,6 +1,6 @@
 # Big Data Analysis
 
-Since this was a big data hackathon, I wanted to dive into the 140+ million rows of purchase data to help prove our go-to-market approach for the app we are proposing. For each row in the data set, these scripts will map the store and purchase hour to the quantity of items purchased at that hour. It uses Python and Spark via PySpark (https://spark.apache.org/docs/0.9.0/python-programming-guide.html).
+Since this was a big data hackathon, I wanted to dive into the 140+ million rows of purchase data to help prove our go-to-market approach for the app we are proposing. For each row in the data set, these scripts will map the store and purchase hour to the quantity of items purchased at that hour. This will help us know where and when most items are purchased. It uses Python and Spark via PySpark (https://spark.apache.org/docs/0.9.0/python-programming-guide.html).
 
 columns:
 ```
