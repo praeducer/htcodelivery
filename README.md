@@ -1,8 +1,8 @@
 # HT CoDelivery
 This data analysis project was part of a winning submission for the CODE category of HACKATHON clt MMXV. Our team name is HT CoDelivery and we are out to "Deliver Groceries Together." We wanted to find a simple approach that easily integrates with Harris Teeter's way of doing things. Our idea is relatively easy to implement and seemed to align with Harris Teeter's mission. It was also something our team was skilled to pursue in several hours. The code in this repo was used to prove which markets were valuable to pursue first. The code for the web app will be at a different location.
 
-+ HACKATHON clt MMXV Main Site: http://www.hackathonclt.org/
-+ Competition Repo: https://github.com/tresata/hackathon2015
+## The Idea
+Paul and Renato found clusters of shoppers that lived near one another. They mapped neighborhoods and stores to purchase quantity and time. Austin wrote an app that helps in-store customers deliver online ordered groceries to their trusted neighbors.
 
 ### what is a hackathon?
 A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It's one part party, one part work-your-butt-off overnight battle against the clock
@@ -53,3 +53,7 @@ The data is in BSV format.
 
 ### what's the prize?
 $4000 grand prize for the HACK category, $2,500 runner ups for CODE and freeSTYLE categories
+
+### Resources
++ HACKATHON clt MMXV Main Site: http://www.hackathonclt.org/
++ Competition Repo: https://github.com/tresata/hackathon2015
